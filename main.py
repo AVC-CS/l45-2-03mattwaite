@@ -10,10 +10,10 @@ def main():
     Code Your Program here
     ########################################
     """
-    while total<= 100 :
-        random_number = random.randint(1,10)
-        numbers.append(random_number)
-        total += random_number
+    while total <= 100 :
+        random_numbers = random.randint(1, 10)
+        numbers.append(random_numbers)
+        total += random_numbers
     
     last_random_num = numbers.pop()
     
@@ -27,7 +27,7 @@ def main():
     ########################################
     # Do not delete the return statement
     ########################################
-    return numbers, total
+    return numbers + [last_random_num], total
 
 
 if __name__ == '__main__':
